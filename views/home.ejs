@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #28a745; /* Green background */
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+      }
+      .header {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px;
+        background-color: #218838;
+      }
+      .header .logout-button {
+        background-color: #dc3545; /* Red background */
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+      }
+      .header .logout-button:hover {
+        background-color: #c82333;
+      }
+      .content {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <a href="/route/logout" class="logout-button">Logout</a>
+    </div>
+    <div class="content">Welcome to the Home Page!</div>
+  </body>
+</html>
